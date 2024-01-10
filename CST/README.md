@@ -4,5 +4,5 @@ A Class Shape Transformation routine was developed using MATLAB based on the wor
 
 The airfoils are parametrized into eight CST coefficients using shape and class functions. These eight CST coefficients are given by,
 
-<img src="https://github.com/kanakaero/airfoil-aerodynamic-geometric-coefficients-dataset/assets/93387754/7d492f4e-5497-48cd-9dcc-af385df13ae0" width="80%">
+<img src="https://github.com/kanakaero/airfoil-aerodynamic-geometric-coefficients-dataset/assets/93387754/7d492f4e-5497-48cd-9dcc-af385df13ae0" width="50%">
 
