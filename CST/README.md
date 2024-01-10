@@ -1,3 +1,8 @@
 # Class Shape Transformation Routine
 
-A Class Shape Transformation routine was developed using MATLAB based on the work of [Brenda Kulfan](https://www.brendakulfan.com/), titled, [A Universal Parametric Geometry Representation Method - "CST"](https://www.researchgate.net/publication/245430684_Universal_Parametric_Geometry_Representation_Method).
+A Class Shape Transformation routine was developed using MATLAB based on the work of [Brenda Kulfan](https://www.brendakulfan.com/), titled, ["A Universal Parametric Geometry Representation Method - 'CST'"](https://www.researchgate.net/publication/245430684_Universal_Parametric_Geometry_Representation_Method).
+
+The airfoils are parametrized into eight CST coefficients using shape and class functions. These eight CST coefficients are given by,
+
+![Screenshot from 2024-01-10 21-33-58](https://github.com/kanakaero/airfoil-aerodynamic-geometric-coefficients-dataset/assets/93387754/7d492f4e-5497-48cd-9dcc-af385df13ae0)
+
