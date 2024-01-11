@@ -1,6 +1,6 @@
 # Class Shape Transformation Framework
 <p align="justify">
-  
+
   A Class Shape Transformation routine was developed using MATLAB<sup>®️</sup> based on the work of [Brenda Kulfan](https://www.brendakulfan.com/), titled, [A Universal Parametric Geometry
   Representation Method - "CST"](https://www.researchgate.net/publication/245430684_Universal_Parametric_Geometry_Representation_Method).
 </p>
@@ -13,3 +13,5 @@ The airfoils are parametrized into eight CST coefficients using shape and class 
 </p>
 <br/>
 <br/>
+
+The 600-point .dat files of the airfoils and their eight coefficients outputted by this framework are stored in the processed airfoil data directory of this repository.
