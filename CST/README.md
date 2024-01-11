@@ -12,6 +12,5 @@ The airfoils are parametrized into eight CST coefficients using shape and class 
   <img align="center" src="https://github.com/kanakaero/airfoil-aerodynamic-geometric-coefficients-dataset/assets/93387754/7d492f4e-5497-48cd-9dcc-af385df13ae0" width="50%">
 </p>
 <br/>
-<br/>
 
 The 600-point .dat files of the airfoils and their eight coefficients outputted by this framework are stored in the processed airfoil data directory of this repository.
