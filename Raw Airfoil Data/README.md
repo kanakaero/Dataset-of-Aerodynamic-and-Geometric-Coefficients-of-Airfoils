@@ -1,4 +1,4 @@
-# Obtaining Raw Airfoil Data
+# Obtaining the Raw Airfoil Data
 
 <p align="justify">
   
