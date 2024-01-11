@@ -2,5 +2,5 @@
 
 <p align="justify">
   
-  The raw airfoil data was obtained from the [UIUC Airfoil Data](https://m-selig.ae.illinois.edu/ads/coord_database.html) and the [Airfoil Tools](http://www.airfoiltools.com/) websites. The data from the UIUC site was obtained using a Python script (scraper.py) developed by [JoshTheEngineer](https://www.youtube.com/watch?v=nILo18DlqAo), and the Airfoil Tools data was manually downloaded.
+  The raw airfoil data was obtained from the [UIUC Airfoil Data](https://m-selig.ae.illinois.edu/ads/coord_database.html) and the [Airfoil Tools](http://www.airfoiltools.com/) websites. The airfoil files from the UIUC site were obtained using a Python script (scraper.py) developed by [JoshTheEngineer](https://www.youtube.com/watch?v=nILo18DlqAo), and the airfoil files from Airfoil Tools were manually downloaded.
 </p>
