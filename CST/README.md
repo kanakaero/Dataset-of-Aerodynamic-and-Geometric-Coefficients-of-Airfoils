@@ -1,4 +1,4 @@
-# Class Shape Transformation Routine
+# Class Shape Transformation Framework
 <p align="justify">
   
   A Class Shape Transformation routine was developed using MATLAB based on the work of [Brenda Kulfan](https://www.brendakulfan.com/), titled, ["A Universal Parametric Geometry Representation
