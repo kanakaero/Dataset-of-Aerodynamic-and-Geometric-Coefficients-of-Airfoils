@@ -30,6 +30,6 @@ def concatenate_results_csv(input_folder, output_file):
 
 # Example usage:
 input_folder = '.'
-output_file = './Results_AoA_0.csv'
+output_file = './Results_AoA_0.csv' # the corresponding AoA
 concatenate_results_csv(input_folder, output_file)
 
