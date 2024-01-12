@@ -2,7 +2,7 @@
 <p align="justify">
 
   A Class Shape Transformation routine was developed using MATLAB<sup>®️</sup> based on the work of [Brenda Kulfan](https://www.brendakulfan.com/), titled, [A Universal Parametric Geometry
-  Representation Method - "CST"](https://www.researchgate.net/publication/245430684_Universal_Parametric_Geometry_Representation_Method). The framework was developed on the work done by 
+  Representation Method - "CST"](https://www.researchgate.net/publication/245430684_Universal_Parametric_Geometry_Representation_Method). The framework was developed based on the work done by 
 [Pramudita Satria Palar](https://pramsatriapalar.wordpress.com/2013/06/15/short-note-on-cst-method-for-airfoil-parameterization-matlab-code-included/).
 </p>
 
