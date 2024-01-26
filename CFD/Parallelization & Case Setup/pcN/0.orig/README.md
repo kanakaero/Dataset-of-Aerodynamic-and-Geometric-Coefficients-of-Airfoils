@@ -1,4 +1,4 @@
 # 0.orig Directory
 
-This directory corresponds to the "0.orig" required by OpenFOAM.
+This directory corresponds to the "0.orig" directory required by OpenFOAM.
 
