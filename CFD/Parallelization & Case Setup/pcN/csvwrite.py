@@ -23,24 +23,10 @@ def extract_values(log_lines):
             cl = float(re.findall(r"Cl:\s+([-.\d]+)", line)[0])
     return cl, cd
 
-def read_dat_file(dat_file_path):
-    coordinates = []
-    with open(dat_file_path, 'r') as dat_file:
-        for line in dat_file:
-            # Assuming the coordinates are space-separated on each line
-            # If the format is different, adjust the parsing logic accordingly
-            x, y = map(float, line.split())
-            coordinates.append((x, y))
-    return coordinates
-
 with open('logOpt.txt', 'r') as log_file:
     log_lines = log_file.readlines()
 
 cl, cd = extract_values(log_lines)
-
-# Read the 600-point coordinate pairs from the .dat file
-coordinates = read_dat_file(dat_file_path)
-
 
 output_csv_path = 'Results.csv'
 write_header = not os.path.exists(output_csv_path)  # Check if the CSV file exists
@@ -48,10 +34,8 @@ write_header = not os.path.exists(output_csv_path)  # Check if the CSV file exis
 with open(output_csv_path, 'a', newline='') as output_csv:
     csv_writer = csv.writer(output_csv)
     if write_header:
-        header_row = ['Filename', 'AoA'] + [f'CST Coeff {i}' for i in range(1, 9)] + ['Cl', 'Cd'] + [f'Coordinate {i}' for i in range(1, 601)]
+        header_row = ['Filename', 'AoA'] + [f'CST Coeff {i}' for i in range(1, 9)] + ['Cl', 'Cd']]
         csv_writer.writerow(header_row)
-    # Convert the coordinate pairs to a list of strings
-    coordinates_list = [f'{x},{y}' for x, y in coordinates]
-    csv_writer.writerow([dat_filename, aoa] + coeff_data + [cl, cd] + coordinates_list)
+    csv_writer.writerow([dat_filename, aoa] + coeff_data + [cl, cd])
 
 print(f"Values extracted and saved to Results.csv for {dat_filename}")
