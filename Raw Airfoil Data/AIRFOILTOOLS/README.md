@@ -1,3 +1,3 @@
 # Raw Airfoils from Airfoil Tools
 
-The airfoils where obtained manually
+This directory contains the airfoils that were obtained manually from http://www.airfoiltools.com/
