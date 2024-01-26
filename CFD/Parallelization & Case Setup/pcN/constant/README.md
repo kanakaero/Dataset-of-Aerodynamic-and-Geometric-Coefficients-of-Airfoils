@@ -1,3 +1,3 @@
 # Constants Directory
 
-This directory corresponds to the "constant" required by OpenFOAM.
+This directory corresponds to the "constant" directory required by OpenFOAM.
