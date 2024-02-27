@@ -11,7 +11,7 @@ n = length(file);
 for i = 1 : n
     [error,DATA,Weights] = CST(file{i});
     [~ , name , ~ ] = fileparts(file{i});
-    filename = fullfile('./IMAGES/',[name,'.png']);
+    filename = fullfile('./PLOTS/',[name,'.png']);
     % Save the file as PNG
     exportgraphics(gcf,filename);
     % Save data in .dat format

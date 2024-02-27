@@ -1,0 +1,91 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         5;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   2000;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  8;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+functions
+{
+	forces
+    {
+        type            forceCoeffs;
+        libs            ("libforces.so");
+        writeControl    timeStep;
+        writeInterval   5;
+        patches         ("airfoil");
+        rho             rhoInf;
+        log             true;
+        rhoInf          1.225;
+        liftDir         (#eval{-sin(AoA*3.1415926535897932/180)} #eval{cos(AoA*3.1415926535897932/180)} 0);
+        e3              (#eval{-sin(0*3.1415926535897932/180)} #eval{cos(8*3.1415926535897932/180)} 0);
+        magUInf         U;
+        lRef            1;
+        Aref            0.1;
+        origin          (0 0 0);
+        dragDir         (#eval{cos(AoA*3.1415926535897932/180)} #eval{sin(AoA*3.1415926535897932/180)} 0);
+        e1              (#eval{cos(AoA*3.1415926535897932/180)} #eval{sin(AoA*3.1415926535897932/180)} 0);
+
+    }
+    yPlus1
+    {
+        // Mandatory entries (unmodifiable)
+        type            yPlus;
+        libs            (fieldFunctionObjects);
+
+        // Optional (inherited) entries
+        writePrecision  8;
+        writeToFile     true;
+        useUserTime     true;
+        region          region0;
+        enabled         true;
+        log             true;
+        timeStart       0;
+        timeEnd         2000;
+        executeControl  timeStep;
+        executeInterval 10;
+        writeControl    timeStep;
+        writeInterval   2000;
+    }
+}
+// ************************************************************************* //
