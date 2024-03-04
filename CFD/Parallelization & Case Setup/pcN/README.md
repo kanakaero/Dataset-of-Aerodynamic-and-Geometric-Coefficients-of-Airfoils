@@ -1,3 +1,3 @@
 # Case Setup
 
-<p> The OpenFoam case setup file folders for the incompressible SimpleFoam solver is provided utilizing the Spalart Allmaras turbulence model. The 'blockMeshdict' automation python script and the combined automation bash script. </p>
+<p> The OpenFoam case setup directories for the incompressible SimpleFoam solver are provided utilizing the Spalart Allmaras turbulence model. The 'blockMeshdict' automation Python script and the combined automation bash script are also provided. </p>
