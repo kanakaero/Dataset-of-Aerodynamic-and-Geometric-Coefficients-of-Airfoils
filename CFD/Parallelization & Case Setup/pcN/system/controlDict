@@ -58,7 +58,7 @@ functions
         log             true;
         rhoInf          1.225;
         liftDir         (#eval{-sin(AoA*3.1415926535897932/180)} #eval{cos(AoA*3.1415926535897932/180)} 0);
-        e3              (#eval{-sin(0*3.1415926535897932/180)} #eval{cos(8*3.1415926535897932/180)} 0);
+        e3              (#eval{-sin(AoA*3.1415926535897932/180)} #eval{cos(AoA*3.1415926535897932/180)} 0);
         magUInf         U;
         lRef            1;
         Aref            0.1;
